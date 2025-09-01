@@ -1,0 +1,31 @@
+{ "app": {
+   
+   "title": "Stored Command",
+   "version": "0.0.0",
+   "supplier": "NASA",
+   "copyright": "Apache 2.0",
+   "url": "https://github.com/nasa/sc",
+
+   "description": [
+      "App spec for NASA's Stored Command App. Basecamp's proxy_sc",
+      "spec defines which version is used."
+   ],
+   
+   "cfs": {
+      "cfe-type": "CFE_APP",
+      "obj-file": "sc",
+      "entry-symbol": "SC_AppMain",
+      "name": "SC",
+      "priority": 40,
+      "stack": 32768,
+      "load_addr": 0,
+      "exception-action": 0,
+      "app-framework": "cfs",
+      "tables": []
+   },
+   
+   "requires": []
+
+}}
+
+

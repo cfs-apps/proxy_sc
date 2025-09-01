@@ -1,0 +1,36 @@
+{ "app": {
+   
+   "title": "Stored Command App",
+   "version": "1.0.0",
+   "supplier": "Open STEMware",
+   "copyright": "bitValence",
+   "url": "https://github.com/cfs-apps/proxy_sc",
+
+   "description": [
+      "This is Basecamp proxy for NASA's Stored Command App. This repo augments",
+      "the SC App repo so SC can be integrated with Basecamp. The 'cfs' and",
+      "'requires' JSON objects are populated in sc.json"
+   ],
+
+   "proxy": {
+      "url": "https://github.com/nasa/sc",
+      "branch-tag": "equuleus-rc1",
+      "update-files": [
+         "sc.json                   >> sc.json",
+         "CMakeLists.txt            >> CMakeLists.txt",
+         "eds/sc.xml                >> eds/sc.xml",
+         "eds/sc_config.xml         >> eds/sc_config.xml",
+         "fsw/inc/sc_msgids.h       >> fsw/inc/sc_msgids.h",
+         "fsw/inc/sc_platform_cfg.h >> fsw/inc/sc_platform_cfg.h",
+         "fsw/inc/sc_msgdefs.h      >> fsw/inc/sc_msgdefs.h"          
+      ]
+   },
+      
+   "cfs": {
+      "cfe-type": "CFE_PROXY"
+   },
+   
+   "requires": []
+   
+}}
+

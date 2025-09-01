@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2022 bitValence, Inc.
+    All Rights Reserved.
+
+    This program is free software; you can modify and/or redistribute it
+    under the terms of the GNU Affero General Public License
+    as published by the Free Software Foundation; version 3 with
+    attribution addendums as found in the LICENSE.txt.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    Purpose: 
+      This defines the JMSG UDP Gateway app interface.
+
+    Notes:
+      1. This document adheres to the Electronic Data Sheet (EDS) XML schema 
+         as prescribed in CCSDS book 876.0.         
+
+-->
+<DesignParameters>
+
+  <Package name="SC" shortDescription="Stored Command App Configuration">
+    <Define name="MAX_ATS_CMDS"    value="1000" shortDescription="Moved from sc_platform_cfg.h" />
+    <Define name="NUMBER_OF_RTS"   value="64"   shortDescription="Moved from sc_platform_cfg.h" />
+    <Define name="NUMBER_OF_ATS"   value="2"    shortDescription="Moved from sc_msgdefs.h" />
+  </Package>
+
+</DesignParameters>
