@@ -12,17 +12,29 @@
       "'requires' JSON objects are populated in sc.json"
    ],
 
+   "developer-notes": [
+      "CFE_MSG_PTR() is not used so sc_app.c, sc_cmds.c and sc_rtsrq.c",
+      "needed mods to compile. Search //bc for the changes""
+   ],
+   
    "proxy": {
       "url": "https://github.com/nasa/sc",
       "branch-tag": "equuleus-rc1",
       "update-files": [
-         "sc.json                   >> sc.json",
-         "CMakeLists.txt            >> CMakeLists.txt",
-         "eds/sc.xml                >> eds/sc.xml",
-         "eds/sc_config.xml         >> eds/sc_config.xml",
-         "fsw/inc/sc_msgids.h       >> fsw/inc/sc_msgids.h",
-         "fsw/inc/sc_platform_cfg.h >> fsw/inc/sc_platform_cfg.h",
-         "fsw/inc/sc_msgdefs.h      >> fsw/inc/sc_msgdefs.h"          
+         "sc.json                        >> sc.json",
+         "CMakeLists.txt                 >> CMakeLists.txt",
+         "eds/sc.xml                     >> eds/sc.xml",
+         "eds/sc_config.xml              >> eds/sc_config.xml",
+         "fsw/inc/sc_msgdefs.h           >> fsw/inc/sc_msgdefs.h",
+         "fsw/inc/sc_msgids.h            >> fsw/inc/sc_msgids.h",
+         "fsw/inc/sc_platform_cfg.h      >> fsw/inc/sc_platform_cfg.h",
+         "fsw/src/sc_app.c               >> fsw/src/sc_app.c",
+         "fsw/src/sc_cmds.c              >> fsw/src/sc_cmds.c",
+         "fsw/src/sc_rtsrq.c             >> fsw/src/sc_rtsrq.c",
+         "fsw/tables/cfe_msg_hdr_proxy.h >> fsw/tables/cfe_msg_hdr_proxy.h",
+         "fsw/tables/sc_ats1.c           >> fsw/tables/sc_ats1.c",
+         "fsw/tables/sc_rts001.c         >> fsw/tables/sc_rts001.c",
+         "fsw/tables/sc_rts002.c         >> fsw/tables/sc_rts002.c"
       ]
    },
       

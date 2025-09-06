@@ -27,6 +27,8 @@
   <Package name="SC" shortDescription="Stored Command App Configuration">
     <Define name="MAX_ATS_CMDS"    value="1000" shortDescription="Moved from sc_platform_cfg.h" />
     <Define name="NUMBER_OF_RTS"   value="64"   shortDescription="Moved from sc_platform_cfg.h" />
+    <Define name="ATS_BUFF_SIZE"   value="8000" shortDescription="Moved from sc_platform_cfg.h" />
+    <Define name="RTS_BUFF_SIZE"   value="150"  shortDescription="Moved from sc_platform_cfg.h" />
     <Define name="NUMBER_OF_ATS"   value="2"    shortDescription="Moved from sc_msgdefs.h" />
   </Package>
 

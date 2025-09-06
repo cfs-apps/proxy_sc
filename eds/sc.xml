@@ -112,13 +112,19 @@
           <Dimension size="${SC/NUMBER_OF_ATS}" />
         </DimensionList>
       </ArrayDataType>
-
+      <!--bc
       <ArrayDataType name="RtsStatusBits" dataTypeRef="BASE_TYPES/StatusBit">
         <DimensionList>
           <Dimension size="${SC/NUMBER_OF_RTS}" />
         </DimensionList>
       </ArrayDataType>
-
+      -->
+      <ArrayDataType name="RtsStatusBits" dataTypeRef="BASE_TYPES/StatusBit">
+        <DimensionList>
+          <Dimension size="4" />
+        </DimensionList>
+      </ArrayDataType>
+      
       <ContainerDataType name="HkTlm_Payload" shortDescription="SC housekeeping">
         <EntryList>
            <Entry name="AtsId" type="AtsId"  shortDescription="Current ATS ID: 1 = ATS A, 2 = ATS B" />
@@ -411,7 +417,22 @@
           <Dimension size="${SC/MAX_ATS_CMDS}" />
         </DimensionList>
       </ArrayDataType>
-
+      
+      <ArrayDataType name="Ats1" dataTypeRef="BASE_TYPES/uint16" shortDescription="bc: Simple array to keep eds2cfetbl tool happy">
+        <DimensionList>
+          <Dimension size="${SC/ATS_BUFF_SIZE}" />
+        </DimensionList>
+      </ArrayDataType>
+      <ArrayDataType name="Rts001" dataTypeRef="BASE_TYPES/uint16" shortDescription="bc: Simple array to keep eds2cfetbl tool happy">
+        <DimensionList>
+          <Dimension size="${SC/RTS_BUFF_SIZE}" />
+        </DimensionList>
+      </ArrayDataType>
+      <ArrayDataType name="Rts002" dataTypeRef="BASE_TYPES/uint16" shortDescription="bc: Simple array to keep eds2cfetbl tool happy">
+        <DimensionList>
+          <Dimension size="${SC/RTS_BUFF_SIZE}" />
+        </DimensionList>
+      </ArrayDataType>      
       <!-- attribute 'size' could not be resolved - Can't find MAX_RTS_CMDS and MAX_APPEND_CMDS
      <ArrayDataType name="AppendTable" dataTypeRef="AtsEntry" shortDescription="Append Table">
         <DimensionList>

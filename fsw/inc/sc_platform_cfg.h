@@ -66,7 +66,7 @@
  *       This parameter can't be larger than an unsigned 16 bit
  *       integer (65535).
  */
-#define SC_ATS_BUFF_SIZE 8000
+//bc::Moved to lc_config.xml: #define SC_ATS_BUFF_SIZE 8000
 
 /**
  * \brief Max buffer size for an Append ATS in uint16s
@@ -87,7 +87,7 @@
  *       This parameter can't be larger than an unsigned 16 bit
  *       integer (65535).
  */
-#define SC_RTS_BUFF_SIZE 150
+//bc::Moved to lc_config.xml: #define SC_RTS_BUFF_SIZE 150
 
 /**
  * \brief Max number of commands in each ATS
