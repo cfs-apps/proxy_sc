@@ -14,7 +14,7 @@
 
    "developer-notes": [
       "CFE_MSG_PTR() is not used so sc_app.c, sc_cmds.c and sc_rtsrq.c",
-      "needed mods to compile. Search //bc for the changes""
+      "needed mods to compile. Search //bc for the changes"
    ],
    
    "proxy": {
