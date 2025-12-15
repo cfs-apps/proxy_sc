@@ -120,7 +120,9 @@ SC_AtsTable1_t SC_Ats1 = {
     .ats.hdr4.CmdNumber  = 4,
     .ats.hdr4.TimeTag_MS = SC_CMD4_TIME >> 16,
     .ats.hdr4.TimeTag_LS = SC_CMD4_TIME & 0xFFFF,
-    .ats.cmd4 = CFE_MSG_CMD_HDR_INIT(SC_CMD_MID, SC_MEMBER_SIZE(cmd4), SC_RESET_COUNTERS_CC, SC_RESET_COUNTERS_CKSUM)};
+    .ats.cmd4 = CFE_MSG_CMD_HDR_INIT(SC_CMD_MID, SC_MEMBER_SIZE(cmd4), SC_RESET_COUNTERS_CC, SC_RESET_COUNTERS_CKSUM)
+
+};
 
 /* Macro for table structure */
 CFE_TBL_FILEDEF(SC_Ats1, SC.ATS_TBL1, SC Example ATS_TBL1, sc_ats1.tbl)
