@@ -1,8 +1,8 @@
 { "app": {
    
    "title": "Stored Command App",
-   "version": "2.0.0",
-   "bc-app-spec": "bc-app-spec-v3.0",
+   "version": "3.1.0",
+   "bc-app-spec": "bc-app-spec-v3.1",
    "supplier": "Open STEMware",
    "copyright": "bitValence",
    "url": "https://github.com/cfs-apps/proxy_sc",
